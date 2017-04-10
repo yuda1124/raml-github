@@ -1,7 +1,7 @@
 #%RAML 0.8
 title: GitHub API
 version: v3
-baseUri: https://api.github23.com
+baseUri: https://api.githuab23.com
 mediaType: application/json
 securitySchemes:
   - oauth_2_0: !include securitySchemes/oauth_2_0.raml
@@ -447,6 +447,9 @@ securedBy: [ oauth_2_0 ]
     description: Create a gist.
     body: 
       application/xml:
+        schema: postGist
+        example: !include examples/postGist-example.json
+      application/json:
         schema: postGist
         example: !include examples/postGist-example.json
     responses: 
