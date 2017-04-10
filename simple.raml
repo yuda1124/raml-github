@@ -1,0 +1,13 @@
+#%RAML 0.8
+title: test2
+version: test2
+/newResource:
+  displayName: resourceName
+  post:
+    body: 
+      application/json:
+        schema: |
+          {"hello": "hi"}
+      application/xml:
+        example: |
+          <xml>asf</xml>
